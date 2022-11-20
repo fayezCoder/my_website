@@ -19,11 +19,9 @@ class boarderFlatButton extends StatelessWidget {
       height: height,
       width: width,
       // ignore: deprecated_member_use
-      child: FlatButton(
+      child: TextButton(
         onPressed: onTap,
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(24),
-            side: const BorderSide(color: Colors.white, width: 1)),
+     
         child: Text(
           title,
           style: const TextStyle(color: Colors.white),
@@ -31,4 +29,6 @@ class boarderFlatButton extends StatelessWidget {
       ),
     );
   }
+  
+
 }

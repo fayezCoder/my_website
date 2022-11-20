@@ -6,7 +6,7 @@ class CustomAppBar extends StatelessWidget {
 
   Widget _appBarButton(String title, VoidCallback onTap) {
     // ignore: deprecated_member_use
-    return FlatButton(
+    return TextButton(
       onPressed: onTap,
       child: Text(
         title,
@@ -23,7 +23,7 @@ class CustomAppBar extends StatelessWidget {
         child: Row(
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text("fayez coder",
+            const Text("Fayez Coder",
                 style: TextStyle(
                     fontWeight: FontWeight.bold, color: Colors.white)),
             const Spacer(
@@ -32,9 +32,9 @@ class CustomAppBar extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                _appBarButton("about", () {}),
-                _appBarButton("contact", () {}),
-                _appBarButton("my page", () {}),
+                _appBarButton("About", () {}),
+                _appBarButton("Contact", () {}),
+                _appBarButton("My page", () {}),
                 boarderFlatButton(
                     title: "Get started", onTap: () {}, width: 150, height: 50)
               ],
