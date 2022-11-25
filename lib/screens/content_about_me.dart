@@ -46,7 +46,7 @@ class ContentAboutMe extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 32),
-        Text(
+        const Text(
           "Find me on",
           style: TextStyle(color: Colors.white),
         ),
