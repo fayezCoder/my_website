@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_website/about.dart';
+import 'package:my_website/Contact.dart';
 import 'package:my_website/widget/border_flat_botton.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -33,11 +33,11 @@ class CustomAppBar extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                _appBarButton("About", () {
+                _appBarButton("About", () {}),
+                _appBarButton("Contact", () {
                   Navigator.of(context).push(
                       MaterialPageRoute(builder: (context) => const About()));
                 }),
-                _appBarButton("Contact", () {}),
                 _appBarButton("My page", () {}),
                 boarderFlatButton(
                     title: "Get started", onTap: () {}, width: 150, height: 50)
