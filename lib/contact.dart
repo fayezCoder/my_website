@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class Contact extends StatelessWidget {
-  const Contact({super.key});
+class About extends StatelessWidget {
+  const About({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF0E0C38),
+      backgroundColor: const Color(0xFF0E0C38),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
