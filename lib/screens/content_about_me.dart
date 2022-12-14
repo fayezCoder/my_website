@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContentAboutMe extends StatelessWidget {
   const ContentAboutMe({Key? key}) : super(key: key);
@@ -13,6 +14,11 @@ class ContentAboutMe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Uri github = Uri.parse("https://github.com/fayezCoder");
+    //final Uri github = Uri.parse("https://github.com/fayezCoder");
+    //final Uri github = Uri.parse("https://github.com/fayezCoder");
+    //final Uri github = Uri.parse("https://github.com/fayezCoder");
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.center,
@@ -53,9 +59,11 @@ class ContentAboutMe extends StatelessWidget {
         Row(
           children: [
             _iconContent(FontAwesomeIcons.twitter, () {}),
-            _iconContent(FontAwesomeIcons.github, () {}),
+            _iconContent(FontAwesomeIcons.github, () {
+              launchUrl(github);
+            }),
             _iconContent(FontAwesomeIcons.tiktok, () {}),
-            _iconContent(FontAwesomeIcons.whatsapp, () {}),
+            _iconContent(FontAwesomeIcons.car, () {}),
           ],
         )
       ],
