@@ -15,9 +15,11 @@ class ContentAboutMe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Uri github = Uri.parse("https://github.com/fayezCoder");
-    //final Uri github = Uri.parse("https://github.com/fayezCoder");
-    //final Uri github = Uri.parse("https://github.com/fayezCoder");
-    //final Uri github = Uri.parse("https://github.com/fayezCoder");
+    final Uri whatsapp = Uri.parse("https://wa.me/0555861780");
+    final Uri tiktok = Uri.parse("https://www.tiktok.com/@fayezcoder");
+    final Uri twitter = Uri.parse("https://twitter.com/faizCoder");
+    //double screenWidth = MediaQuery.of(context).size.width;
+    //double screenHight = MediaQuery.of(context).size.height;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,12 +60,18 @@ class ContentAboutMe extends StatelessWidget {
         ),
         Row(
           children: [
-            _iconContent(FontAwesomeIcons.twitter, () {}),
+            _iconContent(FontAwesomeIcons.twitter, () {
+              launchUrl(twitter);
+            }),
             _iconContent(FontAwesomeIcons.github, () {
               launchUrl(github);
             }),
-            _iconContent(FontAwesomeIcons.tiktok, () {}),
-            _iconContent(FontAwesomeIcons.car, () {}),
+            _iconContent(FontAwesomeIcons.tiktok, () {
+              launchUrl(tiktok);
+            }),
+            _iconContent(FontAwesomeIcons.whatsapp, () {
+              launchUrl(whatsapp);
+            }),
           ],
         )
       ],

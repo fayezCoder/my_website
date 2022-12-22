@@ -38,7 +38,7 @@ class About extends StatelessWidget {
               ),
             ),
             Card(
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 200),
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 100),
               child: ListTile(
                 leading: Icon(
                   Icons.phone,
@@ -55,7 +55,7 @@ class About extends StatelessWidget {
               ),
             ),
             Card(
-              margin: EdgeInsets.symmetric(vertical: 2, horizontal: 200),
+              margin: EdgeInsets.symmetric(vertical: 2, horizontal: 100),
               child: ListTile(
                 leading: Icon(
                   Icons.email,

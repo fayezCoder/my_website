@@ -8,20 +8,21 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
+
     return Scaffold(
       backgroundColor: const Color(0xFF0E0C38),
       appBar: PreferredSize(
-        preferredSize: Size(screenSize.width, 45),
+        preferredSize: screenSize,
         child: const CustomAppBar(),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 50),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children:  const [
+          children: const [
             ContentAboutMe(),
             CircleAvatar(
-              minRadius: 10,
+              //minRadius: 1,
               maxRadius: 100,
               backgroundImage: AssetImage("assets/fayez.jpg"),
             )
